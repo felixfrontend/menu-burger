@@ -1,0 +1,112 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    
+    background: #454545;
+    font-family: 'Staatliches', cursive;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 5%;
+  }
+  .top-ul {
+    margin: 10% 0 70%;
+  }
+  
+  li {
+    color: white;
+    margin: 0 0 10px 0;
+    
+    font-size: 1.4em;
+  }
+  
+  li:hover {
+    color: orange;
+    cursor: pointer;
+  }
+  
+  .nav-menu {
+    position: fixed;
+    
+    width: 260px;
+    height: 100%;
+    background: #111;
+    border-right: solid orange 1px;
+    
+    left: -220px;
+    
+    transition: all 0.2s ease-out;
+  }
+  
+  .show {
+    left: 0px;
+  }
+  
+  /* Burger Menu */
+  .burger-menu-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .nav-menu-btn {
+    display: block;
+    cursor: pointer;
+    
+    padding: 6px 0;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background: #fff;
+    margin: 0px 10px 6px;
+    
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+    background: orange;
+  }
+  
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    background: orange;
+  }
+  
+  /* fitting screen */
+  .main-content {
+    height: 100vh;
+    width: auto;
+  }
+  
+  .text-container {
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  h1 {
+    padding: 0;
+    margin: 0;
+    
+    font-size: 3em;
+  }
+  h1, h3 {
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  span {
+    color: orange;
+  }
